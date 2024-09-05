@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora do TH</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Inclui o arquivo CSS -->
+    <script src= "funcionalidade.js"></script>
+</head>
+<body>
+    <header>
+        <center><h1></h1></center>
+    </header>
+    <main>
+        <center>
+            <section>
+                <div class="calculator">
+                        <div class="display" id="display">
+                            
+                        </div> 
+                        
+                    <div class="column1">
+                        <button class= "unico" onclick="clean('CE')">CE</button><button class="roxos" onclick="back()">C</button><button class="roxos" onclick="insert('%')">%</button><button class="roxos" onclick="insert('/')">/</button>
+                    </div>
+                    <div class="column2">
+                        <button onclick="insert('7')">7</button><button onclick="insert('8')">8</button><button onclick="insert('9')">9</button><button class="roxos" onclick="insert('*')">*</button>
+                    </div>
+                    <div class="column3">
+                        <button onclick="insert('4')">4</button><button onclick="insert('5')">5</button><button onclick="insert('6')">6</button><button class="roxos" onclick="insert('-')">-</button>
+                    </div>
+                    <div class="column4">
+                        <button onclick="insert('1')">1</button><button onclick="insert('2')">2</button><button onclick="insert('3')">3</button><button class="roxos" onclick="insert('+')">+</button>
+                    </div>
+                    <div class="column5">
+                        <button class="zero" onclick="insert('0')">0</button><button>,</button><button class="roxos" onclick="calculate()">=</button>
+                    </div>
+                </div>
+            </section>
+        </center>
+        
+    </main>
+    
+</body>
+</html>
